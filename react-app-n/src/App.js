@@ -5,7 +5,7 @@ import './App.css';
 const Header = () => {
   return (
     <header className="words-app">
-      <h1>Words App - React Land</h1>
+      <h1> Counter World </h1>
     </header>
   )
 }
@@ -13,37 +13,41 @@ const Header = () => {
 // also a dummy component and functional component
 const Footer = () => {
   return (
-    <footer>my cool footer</footer>
+    <footer>React 1st App - Counter World </footer>
   )
 }
 
-class Main extends React.Component {
+class Counter extends React.Component {
   constructor(props) {
     super(props);
-    // initial state
+    // initial counter
     this.state = {
-      words: 'nothing to see here'
+      counter: 0
     }
   }
 
-  handleChange = e => {
-    let words = e.target.value;
-    this.setState({ words });
-    console.log('__STATE__', this.state);
+
+  handleClickUp = e => {
+    e.preventDefault();
+    let counter = this.state.counter;
+    counter++;
+    this.setState({ counter });
   }
 
-  handleClick = e => {
+  handleClickDown = e => {
     e.preventDefault();
-    let words = this.state.words.split('').reverse().join('');
-    this.setState({ words });
+    let counter = this.state.counter;
+    counter--;
+    this.setState({ counter });
   }
 
   render() {
     return (
       <section>
-        <h3>{this.state.words}</h3>
-        <input onChange={this.handleChange} />
-        <button onClick={this.handleClick}>click for words</button>
+        <h3>{this.state.counter}</h3>
+
+        <button onClick={this.handleClickUp}>click for Up</button>
+        <button onClick={this.handleClickDown}>click for Down</button>
       </section>
     )
   }
@@ -54,10 +58,9 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Header />
-        <Main />
-        <Main />
-        <Main />
-        <Main />
+        <Counter />
+        <Counter />
+        <Counter />
         <Footer />
       </React.Fragment>
     )
