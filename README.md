@@ -18,5 +18,4 @@
 - nodemon  
 
 #### UML
-https://github.com/401-advanced-javascript-Nawal/Lab-11-Authentication/blob/Lab15/app-images/Lab15-Part1.jpg
-https://github.com/401-advanced-javascript-Nawal/Lab-11-Authentication/blob/Lab15/app-images/Lab15-Part2.jpg
+https://github.com/401-advanced-javascript-Nawal/Lab-26-react-comp-test/blob/react-ui-comp/20200224_000909.jpg
