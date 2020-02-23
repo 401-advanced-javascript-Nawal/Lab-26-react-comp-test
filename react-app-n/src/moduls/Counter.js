@@ -28,8 +28,8 @@ class Counter extends React.Component {
       return (
         <section>
           <h3>{this.state.counter}</h3>
-          <button onClick={this.handleClickUp}>click for Up</button>
-          <button onClick={this.handleClickDown}>click for Down</button>
+          <button onClick={this.handleClickUp}>Click For Up</button>
+          <button onClick={this.handleClickDown}>Click For Down</button>
         </section>
       )
     }

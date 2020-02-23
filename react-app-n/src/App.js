@@ -12,7 +12,6 @@ class App extends React.Component {
         <Header />
         <Counter />
         <Counter />
-        <Counter />
         <Footer />
       </React.Fragment>
     )
