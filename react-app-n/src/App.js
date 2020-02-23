@@ -11,7 +11,7 @@ class App extends React.Component {
       <React.Fragment>
         <Header />
         <Counter />
-        <Counter />
+        {/* <Counter /> */}
         <Footer />
       </React.Fragment>
     )

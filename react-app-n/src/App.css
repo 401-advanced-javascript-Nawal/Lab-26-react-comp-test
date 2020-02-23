@@ -1,29 +1,26 @@
 body {
-  background-color: rgb(192, 164, 3);
+  background-color: rgb(48, 48, 47);
 }
 
 header h1 {
   background-color: aqua ;
   text-align: center;
-  border: 15px solid navy;
-  border-radius: 20px;
+  border: 15px solid rgb(129, 129, 241);
 }
 
 footer {
   background-color: aqua ;
   text-align: center;
-  border: 15px solid navy;
-  border-radius: 20px;
+  border: 15px solid rgb(129, 129, 241);
   font-size: large;
-  margin: 30px auto;
   font-weight: bolder;
   padding: 10px;
 }
 
 section {
-  background-color: rgb(66, 155, 6);
+  background-color: rgb(10, 4, 99);
   text-align: center;
-  height: 200px;
+  height: 400px;
 }
 section button {
   margin: 30px 50px;
@@ -40,4 +37,13 @@ button {
   font-weight: bolder;
   border-radius: 20px;
   width: 200px;
+  height: 50px;
+}
+
+#b1:hover {
+  background-color: green;
+}
+
+#b2:hover {
+  background-color: red;
 }
