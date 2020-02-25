@@ -1,13 +1,13 @@
 import React from 'react';
 
 class Counter extends React.Component {
-    constructor(props) {
-      super(props);
-      // initial counter
-      this.state = {
-        counter: 0
-      }
-    }
+  constructor(props) {
+    super(props);
+    // initial counter
+    this.state = {
+      counter: 0,
+    };
+  }
   
   
     handleClickUp = e => {
@@ -31,8 +31,8 @@ class Counter extends React.Component {
           <button id="b1" onClick={this.handleClickUp}>Click For Up</button>
           <button id="b2" onClick={this.handleClickDown}>Click For Down</button>
         </section>
-      )
+      );
     }
-  }
+}
 
-  export default Counter;
+export default Counter;

@@ -10,9 +10,9 @@
     "fail": true
     },
     "extends": "eslint:recommended",
+    "parser": "babel-eslint",
     "parserOptions": {
     "sourceType": "module",
-    "parser": "babel-eslint",
     "ecmaVersion": 2018
     },
     "rules": {
